@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.3.10"
+    kotlin("jvm") version "2.1.20"
     application
 }
 
@@ -17,4 +17,8 @@ application {
         listOf(
             "-Djna.library.path=/usr/lib",
         )
+}
+
+kotlin {
+    jvmToolchain(21)
 }
